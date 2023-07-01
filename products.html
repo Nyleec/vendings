@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crunch-N-Munch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("water.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .product {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .product h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+        }
+
+        .separator {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-color: black;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <img class="logo" src="OriginalLogo.png" alt="Logo">
+        <h1>Our Products</h1>
+    </div>
+    <div class="content">
+        <div class="product">
+            <img src="vendingMachine.jpeg" alt="Product 1">
+            <div class="product-info">
+                <h2>Vending Machines</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor lacinia commodo.</p>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="product">
+            <img src="snacks.jpeg" alt="Product 2">
+            <div class="product-info">
+                <h2>Snacks</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor lacinia commodo.</p>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="product">
+            <img src="bevs.jpeg" alt="Product 3">
+            <div class="product-info">
+                <h2>Beverages</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor lacinia commodo.</p>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <div class="scroll-to-top" onclick="scrollToTop()">
+        <img src="scrollArrow.png" alt="Scroll to Top">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

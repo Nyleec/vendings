@@ -1,0 +1,131 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f2f2f2;
+    padding: 10px;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-bottom: 10px;
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold; /* Increase the font weight to make the text stand out */
+    line-height: 1.5; /* Adjust the line height for better readability */
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    /*background: linear-gradient(to bottom right, rgba(255, 215, 0, 0.6), rgba(255, 165, 0, 0.6)); gradient sunrise*/ 
+    background-color: rgba(255, 255, 255, 0.6);
+    color:black;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    color:black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold; /* Increase the font weight to make the text stand out */
+    line-height: 1.5; /* Adjust the line height for better readability */
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.scroll-to-top img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: #f2f2f2;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar li {
+        margin-bottom: 0;
+    }
+    .navbar li a {
+        padding: 10px;
+    }
+
+    .home .content,
+    .about .content,
+    .products .header,
+    .products .content {
+        max-width: 100%;
+    }
+
+    .product img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    .product h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+}
